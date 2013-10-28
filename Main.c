@@ -35,7 +35,7 @@ int main() {
 	}
 	
 	fclose(file_out);
-	
+	// SLAB FOARTE SLAB
 	getch();
 	return 0;	
 }
