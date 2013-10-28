@@ -6,9 +6,12 @@ int main() {
     
     int sum = 0;
     
-    for (i = 0; i < n; i++) {
-        for (j = 0; j < n; j++) {
-            for (k = 0; k < n; k++) {
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j < n; j++)
+        {
+            for (k = 0; k < n; k++)
+            {
                 sum += a[i][k] * b[k][j];
             }
             c[i][j] = sum;
@@ -22,18 +25,17 @@ int main() {
     	
 	file_out = fopen(write_file,"wt");
 	
-	for(i=0;i<n;i++)
+	for (i = 0; i < n; i++)
 	{
-		for(j=0;j<n;j++)
+		for (j = 0; j < n; j++)
 		{
-			fprintf(file_out,"%i ",c[i][j]);
+			fprintf(file_out, "%i ", c[i][j]);
 		}
-		fprintf(file_out,"\n");
+		fprintf(file_out, "\n");
 	}
 	
 	fclose(file_out);
 	
 	getch();
-	
 	return 0;	
 }
